@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>KOHANA KAVA</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+<header class="header">
+
+   <section class="flex">
+
+      <a href="#home" class="logo"><img src="images/logo.png" alt="the picture isn't here"></a>
+
+      <nav class="navbar">
+         <a href="#home">Головна</a>
+         <a href="#about">Про нас</a>
+         <a href="#menu">Меню</a>
+         <a href="#gallery">Галерея</a>
+         <a href="#team">Команда</a>
+         <a href="#contact">Зв'язок</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </section>
+
+</header>
+
+<div class="home-bg">
+
+   <section class="home" id="home">
+
+      <div class="content">
+         <h3>KOHANA KAVA</h3>
+         <p>Зазвичай, саме так виглядає наш ранок: енергійний, веселий і такий коханий. Заходь за своєю порцією ранкової атмосфери і чашечкою смачної кави :)</p>
+         <a href="#about" class="btn">Про нас</a>
+      </div>
+
+   </section>
+
+</div>
+
+<?php
+
+   if ($_POST['login']=='' || $_POST['password']=='') echo 
+      '<!DOCTYPE html>
+         <html lang="ru">
+         <head>
+             <meta charset="UTF-8">
+             <title>Регистрация</title>
+         </head>
+         <body>
+          
+            <form action="registration" method="POST">
+               <p>логин
+                <input type="text" name="login" id="login"></p>
+                <p>пароль
+                <input type="password" name="password" id="password"></p>
+                <input type="submit" id="button" value="Зарегистрироваться">
+            </form>
+            <p><a href="login">Авторизация</a> </p>
+                         
+         </body>
+         </html>';
+
+            <form action="login" method="POST">
+               <p>логин
+                <input type="text" name="login" id="login"></p>
+                <p>пароль
+                <input type="password" name="password" id="password"></p>
+                <input type="submit" id="button" value="Войти">
+            </form>
+            <p><a href="registration">Регистрация</a> </p>
+                         
+   
+
+<section class="about" id="about">
+
+   <div class="image">
+      <img src="images/about-img.svg" alt="the picture isn't here">
+   </div>
+
+   <div class="content">
+      <h3>Coffee and nothing else.</h3>
+      <p>"Мій улюблений робочий момент - самому відкривати кав'ярню, готувати та спостерігати за першим ковтком напою наших відвідувачів. Коли закриваються очі, з'являється посмішка на обличчі. В такі хвилини завмирає час." - Дмитро Овчаренко, засновник KOHANA KAVA.</p>
+      <a href="#menu" class="btn">Меню</a>
+   </div>
+
+</section>
+
+<section class="facility">
+
+   <div class="heading">
+      <img src="images/heading-img.png" alt="the picture isn't here">
+      <h3>our facilities</h3>
+   </div>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/icon-1.png" alt="the picture isn't here">
+         <h3>поп-арт зустріється з класицизмом</h3>
+         <p>Ця комбінація - це все для нас. Це змушує тебе думати та відчувати</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-2.png" alt="the picture isn't here">
+         <h3>кавові зерна</h3>
+         <p>Під еспресо використовуємо зерна CafeBoutique, а під фільтр і хенд-брю – CafeBoutique та One Love</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-3.png" alt="the picture isn't here">
+         <h3>сніданки та солодощі</h3>
+         <p>Якщо ви спробуєте наш брауні, то обов'язково захочете ще. Шоколадно-шоколадний. З горішками. У всіх кав'ярнях KOHANA KAVA </p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-4.png" alt="the picture isn't here">
+         <h3>ви - то є любов</h3>
+         <p>Робота - це своєрідна форма прояву любові. Люди можуть забути про те, що ти сказав, зробив, але ніколи не забудуть те, що ти змусив їх відчути. У кави є щось таке, що чіпляє людей</p>
+      </div>
+
+   </div>
+
+</section>
+
+<section class="menu" id="menu">
+
+   <div class="heading">
+      <img src="images/heading-img.png" alt="the picture isn't here">
+      <h3>popular menu</h3>
+   </div>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/menu-1.png" alt="the picture isn't here">
+         <h3>love you coffee - 30 грн</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/menu-2.png" alt="the picture isn't here">
+         <h3>Cappuccino - 38 грн</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/menu-3.png" alt="the picture isn't here">
+         <h3>Mocha coffee - 29 грн</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/menu-4.png" alt="the picture isn't here">
+         <h3>Frappuccino - 45 грн</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/menu-5.png" alt="the picture isn't here">
+         <h3>black coffee - 40 грн</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/menu-6.png" alt="the picture isn't here">
+         <h3>love heart coffee - 50 грн</h3>
+      </div>
+
+   </div>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+   <div class="heading">
+      <img src="images/heading-img.png" alt="the picture isn't here">
+      <h3>our gallery</h3>
+   </div>
+
+   <div class="box-container">
+      <img src="images/gallery-1.webp" alt="the picture isn't here">
+      <img src="images/gallery-2.webp" alt="the picture isn't here">
+      <img src="images/gallery-3.webp" alt="the picture isn't here">
+      <img src="images/gallery-4.webp" alt="the picture isn't here">
+      <img src="images/gallery-5.webp" alt="the picture isn't here">
+      <img src="images/gallery-6.webp" alt="the picture isn't here">
+   </div>
+
+</section>
+
+<section class="team" id="team">
+
+   <div class="heading">
+      <img src="images/heading-img.png" alt="the picture isn't here">
+      <h3>our team</h3>
+   </div>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/our-team-1.jpg" alt="the picture isn't here">
+         <h3>Мирослав</h3>
+      </div>
+      <div class="box">
+         <img src="images/our-team-2.jpg" alt="the picture isn't here">
+         <h3>Кім</h3>
+      </div>
+      <div class="box">
+         <img src="images/our-team-3.jpg" alt="the picture isn't here">
+         <h3>Ліза</h3>
+      </div>
+      <div class="box">
+         <img src="images/our-team-4.jpg" alt="the picture isn't here">
+         <h3>Дмитро</h3>
+      </div>
+      <div class="box">
+         <img src="images/our-team-5.jpg" alt="the picture isn't here">
+         <h3>Ярослава</h3>
+      </div>
+      <div class="box">
+         <img src="images/our-team-6.jpg" alt="the picture isn't here">
+         <h3>Іван</h3>
+      </div>
+
+   </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+   <div class="heading">
+      <img src="images/heading-img.png" alt="the picture isn't here">
+      <h3>contact us</h3>
+   </div>
+
+   <div class="row">
+
+      <div class="image">
+         <img src="images/contact-img.svg" alt="the picture isn't here">
+      </div>
+<?php
+
+   if ($_POST['login']=='' || $_POST['password']=='') echo 
+      '
+      <form action="" method="post">
+         <h3>забронювати столик</h3>
+         <input type="text" name="name" required class="box" maxlength="20" placeholder="вкажіть своє ім'я">
+         <input type="number" name="number" required class="box" maxlength="20" placeholder="вкажіть свій мобільний" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
+         <input type="number" name="guests" required class="box" maxlength="20" placeholder="кількість гостей" min="0" max="99" onkeypress="if(this.value.length == 2) return false">
+         <input type="submit" name="send" value="надіслати" class="btn">
+      </form>
+      else{
+      //вот так данные можно отправлять без проверки вовсе, ни чего очень плохого случиться не должно. 
+      //PDO все заэкранирует и превратит в текст. 
+      //Можно разве что проверять длинну текста и какие то специфическиие данные
+
+      $sql = "SELECT * FROM users WHERE login=:login AND password=:pass";//Формируем запрос без данных
+      $result = $pdo->prepare($sql);
+      $result->bindvalue(':login', $_POST['login']);  //Заполняем данные
+      $result->bindvalue(':pass', md5(md5($_POST['password'])));  //Заполняем данные. Пароли хранить в открытом виде, дело такое. Поэтому двойной md5)
+      $result->execute( );                   //Выполняем запросы
+      $result = $result->fetchAll();               //переводим обьект ПДО в массив данных, для удобной работы
+
+      if (count($result)>0) {//Если база вернула 1 значение, значит и логин и пароль совпали. отлично
+         echo '<meta charset="UTF-8">Ура! Мы авторизировались!'; 
+         $_SESSION['user'] = $result[0];//сохраняем обьект пользователя в сессии
+         
+      }else echo '<meta charset="UTF-8">Логин или пароль не верный или пользователь не существует';
+   }
+?>
+
+   </div>
+
+</section>
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-envelope"></i>
+         <h3>email</h3>
+         <p>kohanakava@gmail.com</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-clock"></i>
+         <h3>години роботи</h3>
+         <p> з 10:00 до 21:00</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>адреса</h3>
+         <p>ТЦ «Плаза», вулиця Гончара 4</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-phone"></i>
+         <h3>контакти</h3>
+         <p>+123-456-7890</p>
+         <p>+111-222-3333</p>
+      </div>
+
+   </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
